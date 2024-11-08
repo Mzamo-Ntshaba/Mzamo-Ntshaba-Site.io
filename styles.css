@@ -478,3 +478,91 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    section {
+        padding: 3em 1em;
+    }
+
+    .nav__link {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    .intro__img {
+        width: 100%;
+        max-width: 300px; /* Limits size on smaller screens */
+        margin: 0 auto;
+    }
+
+    .services,
+    .portfolio {
+        display: block; /* Switches to single-column layout */
+    }
+
+    .service,
+    .portfolio__item {
+        margin: 1em 0;
+    }
+}
+
+
+
+@media (min-width: 600px) {
+    .intro {
+        display: grid;
+        grid-template-areas:
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+    }
+    .intro__img {
+        grid-area: img;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me__body {
+        font-size: 13.5px; /* Adjust font size for smaller screens if necessary */
+    }
+    .about-me__img {
+        max-width: 45%; /* Reduces image size for smaller screens */
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .about-me {
+        padding: 1em; /* Adjusts padding on smaller screens */
+    }
+    .about-me__img {
+        max-width: 100%;
+        margin-top: 1em; /* Ensures it does not overlap text */
+    }
+}
+
+/* For very small screens (phones in portrait mode) */
+@media (min-width: 320px) and (max-width: 480px) {
+    .about-me {
+        padding: 0.5em; /* Reduces padding */
+    }
+    .about-me__body {
+        padding-left: 0; /* Removes extra space on smaller screens */
+        padding-right: 0; /* Removes extra space on smaller screens */
+    }
+    .about-me__img {
+        max-width: 100%; /* Image can expand fully on small screens */
+        margin-top: 1em; /* Keeps space between image and text */
+        padding-left: 75% ;
+    }
+}
