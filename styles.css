@@ -47,16 +47,8 @@ body {
     font-size: var(--fs-body);
     line-height: 1.6;
 }
-html, body {
-    height: 100%; /* Ensure body and html take up full height */
-
-}
-
 section {
     padding: 5em 2em;
-    height: 100%; /* Ensure body and html take up full height */
-    margin: 0;
-    
 }
 
 img {
@@ -90,7 +82,6 @@ strong { font-weight: var(--fw-bold) }
 .btn:hover {
     transform: scale(1.1);
 }
-
 /* Typography */
 
 h1,
@@ -128,7 +119,6 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-    position: relative;
 }
 
 .section__subtitle--work {
@@ -151,14 +141,14 @@ header {
 
 .nav {
     position: fixed;
-    background: url('./pictures/space.jpg') no-repeat center center;
-    background-size: cover; /* Ensures the background covers the entire nav */
+    background-image: url(./pictures/space.jpg);
     color: var(--clr-light);
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 100;
+
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -173,9 +163,6 @@ header {
     margin: 0;
     padding: 0;
 }
-.nav__item:hover {
-    transform: translateY(8px);
-  }
 
 .nav__link {
     color: inherit;
@@ -444,10 +431,10 @@ header {
     color: #d9d9d9;
 }
 
-.portfolio__doc-link {
+.portfolio__doc-link, .portfolio__doc-link2 {
     background-color: var(--clr-accent);
     color: #141e30;
-    padding: 0.5em 1em;
+    padding: 0.5em 1em 0.5em;
     border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
@@ -459,16 +446,8 @@ header {
     transform: translateY(-3px);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .portfolio {
-        grid-template-columns: 1fr; /* Switches to a single column on small screens */
-    }
-
-    /* Adjust spacing for the portfolio items */
-    .portfolio__card {
-        margin-bottom: 2em; /* Adds space between cards on smaller screens */
-    }
+.portfolio__doc-link2:hover{
+    background-color: blue;
 }
 
 /* Certifications Section */
@@ -517,29 +496,6 @@ header {
 .certification p {
     font-size: 0.9em;
     color: #f0f0f0;
-}
-
-/* Mobile Responsive Design for Certifications */
-@media (max-width: 600px) {
-    .certifications__list {
-        grid-template-columns: 1fr; /* Switches to a single column for smaller screens */
-    }
-
-    /* Adjust padding on smaller screens */
-    .certification {
-        padding: 1em;
-    }
-}
-
-/* For very small screens (phones in portrait mode) */
-@media (min-width: 320px) and (max-width: 480px) {
-    .certifications__list {
-        grid-template-columns: 1fr; /* Ensures single column layout on very small screens */
-    }
-
-    .certification {
-        padding: 1em; /* Adjust padding for smaller screens */
-    }
 }
 
 /* Footer */
@@ -680,3 +636,5 @@ header {
         padding-left: 75%;
     }
 }
+
+
