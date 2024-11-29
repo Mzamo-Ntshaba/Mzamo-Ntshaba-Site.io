@@ -47,6 +47,8 @@ To view the website locally, you need to clone the repository to your local mach
 
     Then open your browser and go to `http://localhost:8000` to view the site.
 
+   Alternatively you can click her to view the live server [Mzamo Ntshaba Portfolio Site](https://mzamontshaba.netlify.app)
+
 ## Usage
 
 Once the project is set up and running locally, you can navigate the site to:
