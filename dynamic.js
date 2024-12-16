@@ -3,33 +3,26 @@ const navLinks = document.querySelectorAll('.nav__link');
 const sections = document.querySelectorAll('section');
 
 // Function to show the clicked section and hide others
-function showSection(event) {
-    const targetId = event.target.getAttribute('href').slice(1); // Extract the ID (e.g., "home")
+function showSection(targetId) {
     sections.forEach(section => {
         if (section.id === targetId) {
-            section.style.display = 'block'; // Show the targeted section
+            section.classList.add('active'); // Show targeted section
         } else {
-            section.style.display = 'none'; // Hide other sections
+            section.classList.remove('active'); // Hide other sections
         }
     });
-
-    // Close the hamburger menu after navigation
-    document.body.classList.remove('nav-open');
 }
 
-// Add event listeners to navigation links
+// Add click event listeners to navigation links
 navLinks.forEach(link => {
     link.addEventListener('click', event => {
-        event.preventDefault(); // Prevent default behavior of anchor links
-        showSection(event);
+        event.preventDefault(); // Prevent default anchor behavior
+        const targetId = link.getAttribute('href').slice(1); // Extract section ID
+        showSection(targetId); // Call the function to update the section
     });
 });
 
-// Default behavior: Show "home" section and hide others on load
+// Set default view to the "home" section
 document.addEventListener('DOMContentLoaded', () => {
-    sections.forEach(section => {
-        if (section.id !== 'home') {
-            section.style.display = 'none'; // Hide all sections except "home"
-        }
-    });
+    showSection('home'); // Display "home" on page load
 });
