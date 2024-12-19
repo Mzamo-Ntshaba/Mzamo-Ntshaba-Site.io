@@ -141,16 +141,18 @@ header {
 
 .nav {
     position: fixed;
-    background-image: url(./pictures/Gbackdrop.png);
+    background-image: url(./pictures/GreenBackdrop.jpg);
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     color: var(--clr-light);
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 100;
-
-    transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    transform: translateX(100%); /* Hide the nav initially */
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1); /* Smooth slide-in/out transition */
 }
 
 .nav__list {
