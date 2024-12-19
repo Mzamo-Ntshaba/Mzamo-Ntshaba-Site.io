@@ -141,7 +141,7 @@ header {
 
 .nav {
     position: fixed;
-    background-image: url(./pictures/GreenBackdrop.png);
+    background-image: url(./pictures/Gbackdrop.png);
     color: var(--clr-light);
     top: 0;
     bottom: 0;
