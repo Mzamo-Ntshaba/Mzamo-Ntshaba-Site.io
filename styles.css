@@ -289,6 +289,8 @@ header {
     background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
+    height: 100vh;
+    
 }
 
 .section__title--services {
@@ -331,6 +333,7 @@ header {
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
+    height: 100vh;
 }
 
 .about-me__img {
