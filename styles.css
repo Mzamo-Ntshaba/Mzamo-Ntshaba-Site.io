@@ -239,6 +239,7 @@ header {
 
 .intro {
     position: relative;
+    height: 100vh;
 }
 
 .intro__img {
