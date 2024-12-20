@@ -211,7 +211,7 @@ header {
 
 .hamburger {
     display: block;
-    position: relative;
+    position: fixed;
 }
 
 .hamburger,
