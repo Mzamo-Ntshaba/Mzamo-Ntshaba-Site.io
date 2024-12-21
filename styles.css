@@ -463,6 +463,7 @@ header {
     color: var(--clr-light);
     padding: 3em 1em;
     text-align: center;
+    height: 100vh
 }
 
 .certifications__list {
