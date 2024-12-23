@@ -472,6 +472,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensures responsive columns */
     gap: 1.5em;
     margin-top: 2em;
+    height 50%;
 }
 
 .experience {
