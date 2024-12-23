@@ -493,7 +493,7 @@ header {
     object-fit: contain; /* Ensures aspect ratio is maintained */
     margin-bottom: 1em; /* Adds space below the image */
 }
-#experience{
+.certification experience{
    height: 50vh;
 }
 
