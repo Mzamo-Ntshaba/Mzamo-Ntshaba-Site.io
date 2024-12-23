@@ -457,6 +457,57 @@ header {
     background-color: blue;
 }
 
+
+/* Certifications Section */
+.experience {
+    background: #003d5b;
+    color: var(--clr-light);
+    padding: 3em 1em;
+    text-align: center;
+
+}
+
+.experience__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensures responsive columns */
+    gap: 1.5em;
+    margin-top: 2em;
+}
+
+.experience {
+    background: #005f73;
+    border-radius: 8px;
+    padding: 1.5em;
+    box-shadow: var(--bs);
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1);
+    text-align: center;
+}
+
+.experience:hover {
+    transform: scale(1.05);
+}
+
+/* Consistent image size */
+.experience img {
+    width: 100%;
+    height: 45%; /* Fixed height */
+    object-fit: contain; /* Ensures aspect ratio is maintained */
+    margin-bottom: 1em; /* Adds space below the image */
+}
+
+
+/* Title styling */
+.experience h3 {
+    margin: 0.3em 0 0.5em;
+    color: plum;
+}
+
+/* Description text styling */
+.experience p {
+    font-size: 0.9em;
+    color: #f0f0f0;
+}
+
 /* Certifications Section */
 .certifications {
     background: #003d5b;
@@ -493,10 +544,6 @@ header {
     object-fit: contain; /* Ensures aspect ratio is maintained */
     margin-bottom: 1em; /* Adds space below the image */
 }
-.certification experience{
-   height: 50vh;
-}
-
 
 /* Title styling */
 .certification h3 {
