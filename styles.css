@@ -441,6 +441,8 @@ header {
 .portfolio__doc-link, .portfolio__doc-link2 {
     background-color: var(--clr-accent);
     color: #141e30;
+    display: flex;
+    justify-content: center;
     text-align: centre;
     padding: 0.5em 1em 0.5em;
     border-radius: 8px;
